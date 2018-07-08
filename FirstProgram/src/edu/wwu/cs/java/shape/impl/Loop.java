@@ -20,4 +20,7 @@ public class Loop extends Shape {
         return outerCircle.overlap(x, y) && !innerCircle.overlap(x, y);
     }
 
+    public double area(){
+        return outerCircle.area() - innerCircle.area();
+    }
 }

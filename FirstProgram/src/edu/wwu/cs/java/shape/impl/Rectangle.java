@@ -16,6 +16,11 @@ public class Rectangle extends Shape {
         this.topLeftCorner = topLeftCorner;
         this.height = height;
         this.width = width;
+
+        if(this.height < 0){
+            throw new RuntimeException("cannot be less than zero");
+        }
+
     }
 
     public boolean overlap(int x, int y){
@@ -42,6 +47,10 @@ public class Rectangle extends Shape {
         //
 
 
+    }
+
+    public double area(){
+        return height * width;
     }
 
 }

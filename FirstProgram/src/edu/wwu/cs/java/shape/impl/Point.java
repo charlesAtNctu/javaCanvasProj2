@@ -27,4 +27,9 @@ public class Point extends Shape {
     public boolean overlap(int x, int y){
         return this.x == x && this.y == y;
     }
+
+    public double area(){
+        return 1;
+    }
+
 }

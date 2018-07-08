@@ -17,6 +17,8 @@ public abstract class Shape {
 
     public abstract boolean overlap(int x, int y);// 2. use abstract to enforce subclasses to implement overlay mehtod
 
+    public abstract double area();
+
     public Shape(char color){
         this.color = color;
     }
